@@ -15,3 +15,17 @@ for i in a:
     if i in 'aeiou':
         d[i]=d.get(i, 0)+1
 print(d)
+
+# add the ovels in reverse formate a = 'potulachandrakumar' output - patulachandrakumor
+import re
+remove_ovels = re.sub(r'[^aeiou]', '', a)
+revers_ovels = remove_ovels[::-1]
+s = ''
+count = 0
+for i in a:
+    if i in 'aeiou':
+        s += revers_ovels[count]
+        count += 1
+    else:
+        s += i
+print(s)
