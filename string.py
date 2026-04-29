@@ -29,3 +29,9 @@ for i in a:
     else:
         s += i
 print(s)
+# if string is not repeated a = 'aabbbcccddd' out put = 2a3b3c3d
+data = sorted(set(a))
+s = ''
+for i in data:
+    s = s + str(a.count(i))+i
+print(s)
